@@ -25,9 +25,7 @@ namespace DemoSignalR.WinFormServer
         public override Task OnDisconnected(bool stopCalled)
         {
             Program.MainForm.WriteToConsole("Client disconnected: " + Context.ConnectionId);
-            return base.OnDisconnected(stopCalled);
-
-            return base.OnDisconnected(stopCalled);
+            return base.OnDisconnected(stopCalled);            
         }
     }
 }
